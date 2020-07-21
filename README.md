@@ -15,5 +15,6 @@ If user chooses valid password requirements:
 - Random characters created from an array pulled from user choices will make up length of password chosen.
  example: If user chose to have 8 characters with only uppercase and special characters the function will pull only the uppercase and special character arrays as options to randomoly rill in an 8 character string.
 
+![Screen Shot 2020-07-21 at 12 01 26 PM](https://user-images.githubusercontent.com/66890142/88095403-eb5ccc80-cb49-11ea-9273-96b3a5d5915b.png)
 
 
