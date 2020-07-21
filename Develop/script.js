@@ -1,24 +1,21 @@
-
-
 var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var specialArray = ['!@#$%^&*()_+~`|}{[]\:;?><,./-='];
-var uppercaseArray = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var specialArray = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", ">", "=", "?", "@", "[", "[", "^", "_", "`", "{", "|", "}", "~"]
+var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H","I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var passwordLength = 0
-
-
-
-
-
 
 // Prompt asking the user various requirements for password
 alert("Welcome! Please choose criteria for the password.")
 
-
 // Ask user for password length between 8-128 character. Alert when invalid input is recieved and tell them to start over. 
+
+// Ask user if they want lowercase, uppercase, numbers and/or special letters in the password.
+
+// Make sure at least one character type is selected.
+
 function userInput() {
   var length = parseInt(prompt("How many characters would you like?"));
-  if (length < 8 || length > 129) {
+  if (length < 8 || length > 128) {
     alert("Your password has to be between 8-128 characters!");
     return;
   }
@@ -41,12 +38,9 @@ function userInput() {
   return userAnswers;
 }
 
-// Ask user if they want lowercase, uppercase, numbers and/or special letters in the password.
-
-
-// Make sure at least one character type is selected.
-
 // Password is then generated using the answers. 
+
+// Arrays of characters for password
 function generatePassword() {
   var passwordCriteria = userInput();
   var passwordArray = [];
@@ -69,8 +63,7 @@ function generatePassword() {
   return password.join("");
 }
 // The Generated password is then shown on the webpage. 
-// Assignment Code
-// Arrays of characters for password
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
