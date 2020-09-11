@@ -1,5 +1,7 @@
 JavaScript: Password Generator
 
+Link to application: https://brianpraseuth.github.io/Password-Generator/
+
 In this project is a fully functioning password generator which will output a random string based on user input.
 
 When user clicks "Generate Password" button then using will be prompted to choose from the following requirements:
